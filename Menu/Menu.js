@@ -13,4 +13,9 @@ const menuButton = document.querySelector('.menu-button');
 // Using your menuButton reference, add a click handler that calls toggleMenu
 menuButton.addEventListener('click', (event) => {
   toggleMenu(menu);
+  TweenMax.from(".menu", 2, {left:600, backgroundColor: 'blue', ease:Back.easeOut});
+  TweenMax.to(".menu", 2, {left: 0, backgroundColor: '#81C784', delay: 1})
+
 });
+
+
