@@ -7,7 +7,7 @@ class Article {
     // create a reference to the ".expandButton" class. 
     this.expandButton = domElement.querySelector('.expandButton');
     // Using your expandButton reference, update the text on your expandButton to say "expand"
-    this.expandButton.textContent = 'Expand'; //no idea why this doesn't work
+    this.expandButton.textContent = 'Expand';
     // Set a click handler on the expandButton reference, calling the expandArticle method.
     this.expandButton.addEventListener('click', () => this.expandArticle());
 
@@ -33,7 +33,8 @@ class Article {
 let articles = document.querySelectorAll('.article');
 
 //for each item in arctles node list, create a new Article with info from domElement
-/*
+/* Example before arrow func
+
 articles.forEach(function (item){
   const articleInstance = new Article (item);
 })
